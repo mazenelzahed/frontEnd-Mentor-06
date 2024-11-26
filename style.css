@@ -1,0 +1,112 @@
+/*! ***** Imports ******/
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+/*! ***** Reset ******/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+img {
+    max-width: 100%;
+}
+/*! ***** Global ******/
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--White);
+    font-size: 14px;
+}
+main {
+    background-color: var(--Grey-800);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 91%;
+}
+/*! ***** Body ******/
+.img-card{
+    justify-content: center;
+}
+.img-card img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 60%;
+    margin: 2em 0;
+}
+.address {
+    color: var(--Green);
+    margin: 1em 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.title {
+    font-size: 16px;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+.button {
+    background-color: var(--Grey-700);
+    margin-bottom: 1em;
+    padding: 1em 6em;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    font-weight: 600;
+}
+.button:active{
+    background-color: var(--Green);
+    color: black;
+}
+/*! ***** Media ******/
+@media screen and (min-width : 600px) {
+    main {
+        width: 25%;
+    }
+    
+}
